@@ -6,8 +6,9 @@
   <title>Psychic Game</title>
 
   <!-- We link our html to the Bootstrap CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- like to style sheet -->
@@ -16,27 +17,28 @@
 
 <body>
 
-  <h1>The Psychic Game</h1>
-  <p>Guess what letter I'm thinking of.  Press a letter to begin.</p>
-  <div>
-    <!-- WINS: # of times the user has guessed the letter correctly | increase the Wins counter and start the game over again without refreshing the page -->
-    <p id="wins-text"></p>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Guess The Letter</h1>
+      <p class="lead">Guess what letter I'm thinking of. Press a letter to begin.</p>
 
-    <!-- Looses:  # of times the user has failed to guess the letter correctly after exhausting all guesses | increase the Losses counter and restart the game without a page refresh -->
-    <p id="losses-text"></p>
+      <!-- WINS: # of times the user has guessed the letter correctly | increase the Wins counter and start the game over again without refreshing the page -->
+      <p id="wins-text"></p>
 
-    <!-- Guesses: # of guesses left. This will update -->
-    <p id="guessesLeft"></p>
+      <!-- Looses:  # of times the user has failed to guess the letter correctly after exhausting all guesses | increase the Losses counter and restart the game without a page refresh -->
+      <p id="losses-text"></p>
 
-    <!-- Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.) -->
-    <p id="userchoice-text"></p>
-    
+      <!-- Guesses: # of guesses left. This will update -->
+      <p id="guessesLeft"></p>
+
+      <!-- Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.) -->
+      <p id="userchoice-text"></p>
+
+    </div>
   </div>
 
+  <script type="text/javascript" src="./assets/javascript/game.js">
 
-
-  <script src="./assets/javascript/game.js">
-  
   </script>
 
 </body>
